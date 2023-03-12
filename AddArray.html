@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let Array1 = [400, 80, 21, 25, 5, 0];
+        let Array2 = [34, 4, 1, 5, 15, 10];
+        let sum = 0;
+        let sumArray = [];
+
+        //adding sq elemnts of Array1
+        for (i = 0; i < Array1.length; i++) {
+            let sq=Array1[i]*Array1[i];
+               console.log(sq);
+            sum = sum + sq;
+        }
+        console.log(sum);
+
+        // adding two arrays
+
+        for (i = 0; i < Array1.length; i++) {
+            sumArray.push(Array1[i] + Array2[i]);
+        }
+        console.log(sumArray);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

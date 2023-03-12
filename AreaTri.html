@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+
+    function triangleArea(x, y, z) {
+    let s = (x + y + z) / 2;
+    let area = Math.sqrt(s * (s - x) * (s - y) * (s - z));
+    return area;
+    }
+
+    let x = 5;
+    let y = 6;
+    let z = 7;
+    let area = triangleArea(x, y, z);
+
+    console.log(area);
+</head>
+<body>
+    
+</body>
+</html>
