@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Point {
+            constructor(x, y) {
+                this.x = x;
+                this.y = y;
+            }
+
+            toString() {
+                console.log("x cordinates : ", this.x, " y cordinates: ", this.y);
+            }
+        }
+
+        // const p = new Point(10, 20);
+        // p.toString();
+
+        class Shape {
+            constructor() {
+                this.position = null;
+            }
+            addToPlane(x, y) {
+                this.position = new Point(x, y)
+
+            }
+            move(x, y) {
+                this.position = new Point(this.position.x + x, this.position.y + y);
+            }
+
+
+        }
+        let s1 = new Shape()
+        s1.addToPlane(10, 20)
+        s1.move(15, 35)
+        s1.position.toString();
+    </script>
+</head>
+
+<body>
+    Define a Shape object. This will be the base for all shapes on the plane. It should have an addToPlane function that
+    takes two integers, x and y, as arguments. This function should assign a Point to the Shape's position property
+    based on these arguments. Shape should also define a move function that takes an x,y pair of arguments and moves the
+    position to a new Point.
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+document object model - predefined object available in browser only.
+within browsers DOM takes up the responsibility to display in it to the user.
+
+Using DOM object in javascript we can perform various operations like 
+creating a new element and changing the look and feel of some event.
+making an element visible/invisible .
+
+DATZY DOM IS VERY MUCH USED IN DYNAMIC HTML.
+DHTML 
+
+In dom base element is document.
+Using document object we can select various element using predefined methods like find element by id.
+
+find elemet by name.
+
+etc...
+
+one of the uses of the DOM related programming is to capture  various HTML
+events and perform operations on that events
+
+Some of the formal events are 
+onClick,onChange,onFocus,etc...
+
+
+some functions like document.getElementByTagName,document.getElementByClassName returns html collections to convert it 
+and use it ->convert to array by using Array.from() methods
+
+
+
+

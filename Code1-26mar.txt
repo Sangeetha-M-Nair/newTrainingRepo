@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      class Shape {
+        constructor(name, color) {
+          this.name = name;
+          this.color = color;
+        }
+        display() {
+          console.log("Name is", this.name);
+          console.log("color is", this.color);
+        }
+      }
+      class Circle extends Shape {
+        constructor(radius, color) {
+          super("circle", color);
+          this.radius = radius;
+          this.color = color;
+        }
+        area() {
+          console.log("Area of Circle", 3.14 * this.radius * this.radius);
+        }
+        display() {
+          super.display();
+          console.log("Radis of given circle is:", this.radius);
+        }
+      }
+      class Reactangle extends Shape {
+        constructor(lenght, width, color) {
+          super("reactngle", color);
+          this.lenght = lenght;
+          this.width = width;
+        }
+        area() {
+          console.log("Area of rectangle", this.lenght * this.width);
+        }
+        display() {
+          super.display();
+          console.log(this.lenght, this.width);
+        }
+      }
+      class Square extends Reactangle {
+        constructor(side, color) {
+          super(side, side, color);
+          this.side = side;
+        }
+        //     area(){
+        //         area = this.lenght * this.width
+        //     }
+        //     display(){
+        //     super.display()
+        //     console.log(this.lenght, this.width)
+        // }
+      }
+      let c1 = new Circle(10, "Red");
+      c1.display();
+      c1.area();
+      let s1 = new Square(20, "Blue");
+      s1.display();
+      s1.area();
+      let s2 = new Square(20, "Purple");
+      s2.display();
+      s2.area();
+      let r1 = new Reactangle(25, 4, "Yellow");
+      r1.display();
+      r1.area();
+    </script>
+  </head>
+  <body></body>
+</html>

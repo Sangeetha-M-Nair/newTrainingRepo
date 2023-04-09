@@ -1,0 +1,45 @@
+Object -real world entities.
+any object will have attributes / properties (data) and functions(methods) which works on data objects
+combinations of properties and functions are knows as Objects.
+
+eg: student OBJECTS:
+Name
+Age
+rollNo 
+address
+
+METHODS
+Student study
+student play
+student travel
+student drink
+
+
+In JS objects and arrays are related .
+Arrays have fixed index starting from 0.
+In js index is the properties name.
+In js we can create an empty object by using  {}.
+
+
+To simplify the process of creating the object js make use of classes.
+a class is a template using which we can create objects with predefined attributes and functions.
+there are two ways of creating objects in javascript.
+1 primitive way using functions.
+2 class oriented way.
+
+
+
+When we create an object using any of these above method we have to rew a keyword new.
+
+
+
+>> Inheritence is a property in which a class can get properties and functions from other class.
+for eg: employee and manager ..here manager is also an emoployee
+here employee is a manager so there is a 'is a ' relationship.
+so we can implement it with the help of inheritence.
+
+
+Javascript support object orientedness with the help of extend keyword.
+
+
+

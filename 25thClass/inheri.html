@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+        class Employee {
+            constructor(name, id, salary) {
+                this.name = name;
+                this.id = id;
+                this.salary = salary;
+            }
+            work() {
+                console.log(this.name, "performs works");
+            }
+        }
+        class Manager extends Employee {
+            constructor(name, id, salary, reportees) {
+                super(name, id, salary); //this calls employyes constructor
+                /*when ever you extend from a class, you have to call base class constructor by using 'super' function */
+                this.reportees = reportees;
+            }
+            managers() {
+                console.log(this.name, "manages employes");
+            }
+        }
+
+
+        let e1 = new Employee("sangeetha", 22323, 23523573)
+        let e2 = new Employee("Mahesh", 2233, 23523582773)
+        let arr1 = [e1, e2]
+        let m1 = new Manager("sir", 13, 123243534, arr1)
+
+        m1.managers()
+        m1.work();
+    </script>
+</head>
+
+<body>
+    ALt+shf+F=>word wrap
+</body>
+
+</html>
