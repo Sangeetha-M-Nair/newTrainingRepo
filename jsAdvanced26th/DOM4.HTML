@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function handleClick() {
+            let table = document.createElement("table");
+            let row1 = document.createElement("tr");
+
+            for (i = 0; i <= 6; i++) {
+                let cell1 = document.createElement("td");
+                cell1.innerText = "Cell 1"; // Fix: Use textContent instead of text
+                row1.appendChild(cell1)
+            }
+            table.appendChild(row1)
+
+            document.getElementsByTagName("body")[0].appendChild(
+                table); // Fix: Use getElementsByTagName and access   first element
+
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="handleClick()">Creating table</button>
+    <div id="myId"></div>
+</body>
+
+</html>

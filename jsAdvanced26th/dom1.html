@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write("<h1>DHTML example</h1>")
+
+        function handleClick() {
+            // let val = document.getElementById("name").value;
+            let elements = document.getElementsByName("form_element")
+            // elements.forEach(function (element) {
+            //     alert(element.id + "=" + element.value + "is a " + element.name)
+            // })
+            // alert("you entered" + val)
+
+            for (let i = 0; i < elements.length; i++) {
+                let element = elements[i]
+                alert(element.id + "=" + element.value + "  ...name===" + element.name)
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <label for="name">
+        Name
+    </label>
+    <input type="text" id="name" name="form_element" /><br />
+    <label for="email">
+        Email
+    </label>
+    <input type="text" id="email" name="form_element" /><br />
+
+    <button id="btn" onclick="handleClick()">Click</button>
+</body>
+
+</html>

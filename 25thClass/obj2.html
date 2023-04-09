@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Student(name, age, rollNo) {
+            this.name = name
+            this.age = age
+            this.rollNo = rollNo
+            this.display = function () {
+                console.log('name is ', this.name);
+                console.log('aGE is ', this.age);
+                console.log('roll number is ', this.rollNo);
+
+            }
+        }
+        let s1 = new Student('san', 33, 21)
+        s1.display();,
+        let s2 = new Student('amaab', 30, 21)
+        s2.display();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

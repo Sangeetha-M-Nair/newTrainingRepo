@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        class Account {
+            constructor(a_no, a_type, c_name) {
+                this.a_no = a_no
+                this.a_type = a_type
+                this.c_name = c_name
+            }
+            display() {
+                console.log(JSON.stringify(this))
+            }
+        }
+        class Saving extends Account {
+            constructor(a_no, c_name, interest) {
+                super(a_no, "Saving", c_name)
+                this.interest = interest
+            }
+            interest_rate() {
+                console.log(this.a_type, " its ", this.interest)
+            }
+
+        }
+        class Current extends Account {
+
+            constructor(a_no, c_name, balance) {
+                super(a_no, "Current", c_name)
+                this.balance = balance
+            }
+
+
+        }
+        let s1 = new Saving(131312321, "Sangeetha", 10)
+        s1.interest_rate()
+           let c1 = new Current(131312321, "Sangeetha", 10)
+           c1.balance1()
+    </script>
+</head>
+
+<body>
+    Q 2. We want to create account class having a/c no, a/c type(saving and current), customer name.
+    saving a/c will have interest rete And current a/c will have balance.
+
+</body>
+
+</html>

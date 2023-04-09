@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Calc {
+            constructor(num1, num2) {
+                this.num1 = num1;
+                this.num2 = num2;
+
+            }
+            add() {
+                let num3 = this.num1 + this.num2
+                console.log("addition is", num3);
+
+            }
+            sub() {
+                let num3 = this.num1 - this.num2
+                console.log("Subtracted Result is", num3);
+
+            }
+            mul() {
+                let num3 = this.num1 * this.num2
+                console.log("Multiplication :", num3);
+
+            }
+            div() {
+                this.num3 = this.num1 / this.num2
+                console.log("division is", this.num3);
+
+            }
+        } //class over
+        let s1 = new Calc(26, 32);
+
+        s1.add();
+        s1.sub();
+        s1.mul();
+        s1.div();
+    </script>
+</head>
+
+<body>
+    Ques1: create a calculator class which will contain function to perform addition subs multi and division.
+
+</body>
+
+</html>
