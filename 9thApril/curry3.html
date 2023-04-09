@@ -17,7 +17,9 @@
               console.log("we are in hello")
           }
 
-          let curry = wrapper(hello)
+          let curry = wrapper(hello) //curry holding hello function
+          console.log("Before calling hello")
+          curry() //now it is like hello()
       </script>
   </head>
 
